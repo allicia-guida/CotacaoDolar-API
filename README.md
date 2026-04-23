@@ -16,7 +16,7 @@ A solução é composta por dois serviços:
 ### Tecnologias utilizadas
 
 - .NET 8
-- ASP.NET
+- C#
 - Console Application
 - HTML, CSS e JavaScript
 

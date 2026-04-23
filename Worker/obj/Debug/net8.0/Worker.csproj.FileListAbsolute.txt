@@ -1,0 +1,15 @@
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.AssemblyInfoInputs.cache
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.AssemblyInfo.cs
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.csproj.CoreCompileInputs.cache
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.sourcelink.json
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\bin\Debug\net8.0\Worker.exe
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\bin\Debug\net8.0\Worker.deps.json
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\bin\Debug\net8.0\Worker.runtimeconfig.json
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\bin\Debug\net8.0\Worker.dll
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\bin\Debug\net8.0\Worker.pdb
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.dll
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\refint\Worker.dll
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.pdb
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\Worker.genruntimeconfig.cache
+C:\Users\allicia.brant\CotacaoDolar-API\Worker\obj\Debug\net8.0\ref\Worker.dll

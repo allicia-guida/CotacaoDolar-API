@@ -29,6 +29,13 @@ A solução é composta por dois serviços:
 - `Worker/`: projeto console responsável por atualizar a cotação  
 - `Worker/Program.cs`: rotina que consulta a API externa e grava o JSON  
 
+## Decisões arquiteturais
+
+- Separação entre API e Worker para manter as responsabilidades organizadas.
+- Uso de arquivo JSON para persistência dos dados de forma simples, sem necessidade de banco de dados.
+- Execução do Worker em loop com delay para realizar a atualização periódica da cotação.
+- Estrutura mantida simples para facilitar o entendimento e a organização do projeto.
+
 ## Como executar:
 
 ### 1. Iniciar o Worker
@@ -69,3 +76,5 @@ json:
 ### Melhorias futuras
 
 - Containerização com Docker para facilitar a execução e padronização do ambiente
+- Utilizar um banco de dados em vez de arquivo JSON.
+- Melhorar a forma de execução do Worker, utilizando um agendador mais adequado.

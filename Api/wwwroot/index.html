@@ -41,6 +41,9 @@
 
     document.getElementById("atualizar").addEventListener("click", carregarCotacao);
     carregarCotacao();
+    
+    // Atualiza a página sozinha cada 60 segundos
+    setInterval(carregarCotacao, 60000); 
 </script>
 </body>
 </html>

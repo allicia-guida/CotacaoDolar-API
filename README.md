@@ -13,14 +13,14 @@ A solução é composta por dois serviços:
 - A `Api` lê esse arquivo e retorna os dados em JSON.  
 - A página HTML consome a API e mostra o valor na tela.
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 - .NET 8
 - ASP.NET
 - Console Application
 - HTML, CSS e JavaScript
 
-## Estrutura do projeto
+### Estrutura do projeto
 
 - `Api/`: projeto da API ASP.NET Core  
 - `Api/Controllers/CotacaoController.cs`: endpoint que retorna a cotação  
@@ -31,11 +31,19 @@ A solução é composta por dois serviços:
 
 ## Como executar:
 
-## 1. Iniciar o Worker
+### 1. Iniciar o Worker
 
 Na pasta do projeto, execute:
 
 dotnet run --project Worker
+
+### 2. Iniciar a Api
+
+Em outro terminal, execute:
+
+dotnet run --project Api
+
+Com isso, a API ficará disponível para consulta dos dados.
 
 ## Como acessar:
 
@@ -54,6 +62,6 @@ json:
 
 ## Observações:
 
-- O `Worker` depende de acesso a internet para consultar a cotação.
+- O Worker depende de acesso à internet para consultar a cotação.
 - A API depende da existência do arquivo `Api/data.json`.
 - O projeto foi feito com foco didatico e estrutura simples.

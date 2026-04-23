@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using Api.Models;
 
 namespace Api.Controllers;
 
@@ -14,7 +16,10 @@ public class CotacaoController : ControllerBase
         {
             return NotFound("Arquivo de dados não encontrado.");
         }
+
         var json = System.IO.File.ReadAllText(path);
-        return Ok(json);
+        var cotacao = JsonSerializer.Deserialize<Cotacao>(json);
+
+        return Ok(cotacao);
     }
 }

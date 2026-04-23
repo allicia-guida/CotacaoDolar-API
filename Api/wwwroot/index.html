@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação do Dólar</title>
+</head>
+<body>
+    <main>
+        <h1>Cotação do Dólar</h1>
+        <p class="linha"><span class="rotulo">Valor:</span> <span id="valor">Carregando...</span></p>
+        <p class="linha"><span class="rotulo">Data:</span> <span id="data">Carregando...</span></p>
+        <button id="atualizar" type="button">Atualizar</button>
+    </main>
+
+   <script>
+    async function carregarCotacao() {
+        const valor = document.getElementById("valor");
+        const data = document.getElementById("data");
+
+        valor.textContent = "Carregando...";
+        data.textContent = "Carregando...";
+
+        try {
+            const resposta = await fetch("/Cotacao");
+
+            if (!resposta.ok) {
+                throw new Error("Não foi possível obter a cotação.");
+            }
+
+            const cotacao = await resposta.json();
+
+            valor.textContent = cotacao.valor ?? "Não informado";
+            data.textContent = cotacao.data ?? "Não informada";
+        } catch (erro) {
+            valor.textContent = "-";
+            data.textContent = "-";
+        }
+    }
+
+    document.getElementById("atualizar").addEventListener("click", carregarCotacao);
+    carregarCotacao();
+</script>
+</body>
+</html>
